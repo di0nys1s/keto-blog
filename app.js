@@ -21,6 +21,10 @@ app.get("/", (req, res) => {
   res.render("home", { posts: posts });
 });
 
+app.get("/new-post", (req, res) => {
+  res.render("compose");
+});
+
 app.get("/about", (req, res) => {
   res.render("about", { aboutContent: aboutContent });
 });
